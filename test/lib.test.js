@@ -3,6 +3,7 @@
 // })
 
 const lib = require("../lib");
+const exercise = require("../exercise1");
 
 describe("absolute", () => {
   it("should be positive if input is a positive number", () => {
@@ -57,6 +58,8 @@ describe("registerUser", () => {
   it("should return username", () => {
     const result = lib.registerUser("Auntor");
     expect(result).toMatchObject({ username: "Auntor" });
-    expect(result.id).toBeGreaterThan(0)
+    expect(result.id).toBeGreaterThan(0);
   });
 });
+
+
